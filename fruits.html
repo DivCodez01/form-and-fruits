@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            display: grid;
+            width: 100%;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            border: 5px solid black;
+            box-shadow: 0px 0px 20px inset;
+            border-radius: 20px;
+            width: 200px;
+            height: 50px;
+            display: grid;
+            text-align: center;
+            align-items: center;
+        }
+
+        p:nth-child(even) {
+            background-color: rgb(255, 72, 0);
+            display: grid;
+        }
+
+        p:nth-child(odd) {
+            background-color: rgb(255, 187, 0);
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Separate this fruit:</h1>
+        <p id="orange-el"></p>
+        <p id="banana-el"></p>
+    </div>
+    <script src="fruits.js"></script>
+</body>
+
+</html>
