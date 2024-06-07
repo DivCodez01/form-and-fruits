@@ -12,3 +12,8 @@ myForm.biking.onfocus = function () {
     myForm.biking.style.border = "4px solid pink";
     myForm.biking.style.outline = "none";
 }
+
+
+myForm.biking.onblur = function () {
+    myForm.biking.style.border = "4px solid green";
+}
